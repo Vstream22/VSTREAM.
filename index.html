@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VSTREAM | Acceso a tu entretenimiento</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--primary:#6c3bff;
+--secondary:#00bfff;
+--dark:#050816;
+--card:rgba(255,255,255,.05);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#050816,#0d1224,#141d3a);
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+min-height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px 20px;
+}
+
+.hero img{
+width:180px;
+margin-bottom:20px;
+filter:drop-shadow(0 0 20px rgba(0,191,255,.4));
+}
+
+.hero h1{
+font-size:4rem;
+font-weight:800;
+background:linear-gradient(90deg,#00bfff,#6c3bff);
+background-clip:text;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+color:transparent;
+}
+
+.hero p{
+margin-top:15px;
+font-size:1.2rem;
+opacity:.9;
+}
+
+.hero-btn{
+margin-top:30px;
+padding:15px 30px;
+border-radius:12px;
+text-decoration:none;
+font-weight:700;
+background:linear-gradient(90deg,#00bfff,#6c3bff);
+color:white;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin:50px 0 30px;
+}
+
+.services{
+max-width:1400px;
+margin:auto;
+padding:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:var(--card);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,.08);
+border-radius:20px;
+padding:25px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 25px rgba(108,59,255,.4);
+}
+
+.service-name{
+font-size:28px;
+font-weight:800;
+margin-bottom:15px;
+text-transform:uppercase;
+}
+
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 25px;
+border-radius:10px;
+text-decoration:none;
+font-weight:700;
+background:linear-gradient(90deg,#00bfff,#6c3bff);
+color:white;
+}
+
+.features{
+max-width:1200px;
+margin:auto;
+padding:60px 20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.feature{
+background:var(--card);
+padding:25px;
+border-radius:15px;
+text-align:center;
+}
+
+.testimonials{
+padding:60px 20px;
+}
+
+.testimonial-grid{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.testimonial{
+background:var(--card);
+padding:25px;
+border-radius:15px;
+text-align:center;
+}
+
+footer{
+text-align:center;
+padding:40px;
+margin-top:40px;
+background:rgba(0,0,0,.3);
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+width:70px;
+height:70px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:32px;
+text-decoration:none;
+color:white;
+box-shadow:0 0 25px rgba(37,211,102,.5);
+animation:pulse 2s infinite;
+z-index:999;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.1);}
+100%{transform:scale(1);}
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<img src="logo.png" alt="VSTREAM">
+
+<h1>VSTREAM</h1>
+
+<p>Acceso a tu entretenimiento</p>
+
+<a class="hero-btn"
+href="https://wa.me/51904276206">
+Contactar por WhatsApp
+</a>
+
+</section>
+
+<h2 class="section-title">Nuestros Servicios</h2>
+
+<section class="services" id="services"></section>
+
+<h2 class="section-title">¿Por qué elegir VSTREAM?</h2>
+
+<section class="features">
+
+<div class="feature">
+⚡ Activación rápida
+</div>
+
+<div class="feature">
+🔒 Atención personalizada
+</div>
+
+<div class="feature">
+📱 Compatible con todos tus dispositivos
+</div>
+
+<div class="feature">
+💳 Diversos métodos de pago
+</div>
+
+</section>
+
+<h2 class="section-title">Clientes Satisfechos</h2>
+
+<section class="testimonials">
+
+<div class="testimonial-grid">
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐<br><br>
+Excelente atención y rapidez.
+</div>
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐<br><br>
+Muy recomendable.
+</div>
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐<br><br>
+Servicio estable y confiable.
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 VSTREAM - Acceso a tu entretenimiento
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/51904276206">
+💬
+</a>
+
+<script>
+
+const services = [
+
+{name:"Netflix",color:"#E50914"},
+{name:"Amazon Prime Video",color:"#00A8E1"},
+{name:"Disney Standard",color:"#113CCF"},
+{name:"Disney Premium",color:"#113CCF"},
+{name:"Disney Premium con ESPN",color:"#113CCF"},
+{name:"HBO Max",color:"#5A31F4"},
+{name:"Apple TV+",color:"#C0C0C0"},
+{name:"Paramount",color:"#0064FF"},
+{name:"Paramount Premium",color:"#0064FF"},
+{name:"Crunchyroll",color:"#F47521"},
+{name:"YouTube Premium",color:"#FF0000"},
+{name:"Pluto TV",color:"#00E1FF"},
+{name:"ViX",color:"#FFD700"},
+{name:"DAZN",color:"#FFFFFF"},
+{name:"OLEADA TV",color:"#00FFFF"},
+{name:"GEMINI PRO",color:"#4285F4"},
+{name:"TELE LATINO",color:"#00FF99"},
+{name:"UNIVERSAL+",color:"#4DA6FF"},
+{name:"IPTV",color:"#00FFCC"},
+{name:"FLUJO TV",color:"#00D4FF"},
+{name:"SPOTIFY",color:"#1DB954"},
+{name:"DEEZER",color:"#FF5E5E"},
+{name:"DIRECTV GO",color:"#00A3FF"},
+{name:"MOVISTAR PLAY",color:"#00C7FF"},
+{name:"CAPCUT PRO",color:"#FFFFFF"},
+{name:"CANVA PRO",color:"#00C4CC"},
+{name:"CHAT GPT",color:"#10A37F"},
+{name:"VPN EXPRESS",color:"#D92D20"},
+{name:"VIKI RAKUTEN",color:"#00D2FF"},
+{name:"DRAMA BOX",color:"#FF69B4"},
+{name:"TINDER",color:"#FF4458"}
+
+];
+
+const container = document.getElementById("services");
+
+services.forEach(service=>{
+
+const mensaje = encodeURIComponent(
+`Quiero contratar este servicio (${service.name})`
+);
+
+container.innerHTML += `
+
+<div class="card">
+
+<div class="service-name" style="color:${service.color}">
+${service.name}
+</div>
+
+<a class="btn"
+target="_blank"
+href="https://wa.me/51904276206?text=${mensaje}">
+Contratar
+</a>
+
+</div>
+
+`;
+
+});
+
+</script>
+
+</body>
+</html>
